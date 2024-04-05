@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/EventResource/static/css/main.746db034.css",
+    "main.js": "/EventResource/static/js/main.9d97b874.js",
+    "static/media/SEGA.woff": "/EventResource/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/EventResource/index.html",
+    "main.746db034.css.map": "/EventResource/static/css/main.746db034.css.map",
+    "main.9d97b874.js.map": "/EventResource/static/js/main.9d97b874.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.746db034.css",
+    "static/js/main.9d97b874.js"
+  ]
+}
