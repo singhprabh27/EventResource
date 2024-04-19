@@ -18,7 +18,7 @@ class UserEvents extends Component {
         const { userid } = this.props;
 
         try {
-            const response = await fetch(`http://localhost:3000/UserEvents/${userid}`);
+            const response = await fetch(`https://eventresourcebackend.onrender.com/UserEvents/${userid}`);
             if (!response.ok) {
                 throw new Error('Failed to fetch user events');
             }

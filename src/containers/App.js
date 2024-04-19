@@ -45,7 +45,7 @@ class App extends Component {
     //         .then(users => { this.setState({ robots: users }) });
     // }
     componentDidMount() {
-        fetch('http://localhost:3000')
+        fetch('https://eventresourcebackend.onrender.com')
             .then(response => response.json())
             .then(users => { this.setState({ robots: users }) })
             .catch(err => console.log('Error fetching users:', err));
@@ -64,7 +64,6 @@ class App extends Component {
             }
         })
     }
-
 
     onRouteChange = (route) => {
         if (route === 'signout') {

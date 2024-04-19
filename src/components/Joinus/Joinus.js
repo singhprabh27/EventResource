@@ -40,10 +40,10 @@ class Joinus extends Component {
         let endpoint = '';
         let formData = {};
         if (userType === 'company') {
-            endpoint = 'http://localhost:3000/Joinus/Company';
+            endpoint = 'https://eventresourcebackend.onrender.com/Joinus/Company';
             formData = { name, email, phone, website, city, description, image_url };
         } else if (userType === 'serviceProvider') {
-            endpoint = 'http://localhost:3000/Joinus/ServiceProvider';
+            endpoint = 'https://eventresourcebackend.onrender.com/Joinus/ServiceProvider';
             formData = { name, email, phone, servicetype, description, skills, rating, experience, image_url, city };
         }
 

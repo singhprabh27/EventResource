@@ -13,7 +13,7 @@ class ServiceProvider extends Component {
         }
     }
     componentDidMount() {
-        fetch('http://localhost:3000/ServiceProvider')
+        fetch('https://eventresourcebackend.onrender.com/ServiceProvider')
             .then(response => response.json())
             .then(users => { this.setState({ providers: users }) })
             .catch(err => console.log('Error fetching users:', err));

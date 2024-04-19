@@ -47,7 +47,7 @@ class CreateEvent extends React.Component {
     }
 
     onSubmitCreateEvent = () => {
-        fetch('http://localhost:3000/CreateEvent', {
+        fetch('https://eventresourcebackend.onrender.com/CreateEvent', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
