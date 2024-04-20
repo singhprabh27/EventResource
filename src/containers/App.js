@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
-import Navigation from '../components/Navigation/Navigation2';
+import Navigation from '../components/Navigation/Navigation';
 import Signin from '../components/Signin/Signin2';
 import Register from '../components/Register/Register2';
 import Home from '../components/Home/Home';
