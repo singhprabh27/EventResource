@@ -74,6 +74,9 @@ class Signin extends React.Component {
                         </div>
                         <div className="lh-copy mt3">
                             <p onClick={() => onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
+                            <p>For testing Puposes use</p>
+                            <p>Username: john@example.com</p>
+                            <p>Password:password123</p>
                         </div>
                     </div>
                 </main>

@@ -122,7 +122,7 @@ class App extends Component {
                                 userName={this.state.user.name}
                                 userid={this.state.user.id}
                                 onRouteChange={this.onRouteChange} />;
-                            
+
                         default:
                             return <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />;
                     }
