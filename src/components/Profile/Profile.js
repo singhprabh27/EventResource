@@ -15,7 +15,7 @@ class Profile extends Component {
 
     fetchUserData = () => {
         // Make a GET request to fetch user data based on user id
-        fetch(`http://localhost:3000/profile/${this.props.userid}`)
+        fetch(`https://eventresourcebackend.onrender.com/profile/${this.props.userid}`)
             .then(response => response.json())
             .then(data => {
                 // Set the fetched user data to the component state

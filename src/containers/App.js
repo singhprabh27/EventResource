@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 // import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
-import Navigation from '../components/Navigation/Navigation2';
+import Navigation from '../components/Navigation/Navigation';
 import Signin from '../components/Signin/Signin2';
 import Register from '../components/Register/Register2';
 import Home from '../components/Home/Home';
@@ -45,7 +45,7 @@ class App extends Component {
     //         .then(users => { this.setState({ robots: users }) });
     // }
     componentDidMount() {
-        fetch('http://localhost:3000')
+        fetch('https://eventresourcebackend.onrender.com')
             .then(response => response.json())
             .then(users => { this.setState({ robots: users }) })
             .catch(err => console.log('Error fetching users:', err));
@@ -64,7 +64,6 @@ class App extends Component {
             }
         })
     }
-
 
     onRouteChange = (route) => {
         if (route === 'signout') {
@@ -123,7 +122,7 @@ class App extends Component {
                                 userName={this.state.user.name}
                                 userid={this.state.user.id}
                                 onRouteChange={this.onRouteChange} />;
-                            
+
                         default:
                             return <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} />;
                     }

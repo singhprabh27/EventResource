@@ -13,7 +13,7 @@ class Card_ServiceProvider extends Component {
     }
     componentDidMount() {
         // Fetch service provider data with the given ID
-        fetch(`http://localhost:3000/Card_ServiceProvider/${this.props.id}`)
+        fetch(`https://eventresourcebackend.onrender.com/Card_ServiceProvider/${this.props.id}`)
             .then(response => response.json())
             .then(serviceProvider => this.setState({ serviceProvider: serviceProvider }))
             .catch(error => console.error('Error fetching service provider:', error));
